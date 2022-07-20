@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&family=Tiro+Gurmukhi&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+}
+header{
+    position: fixed;
+    z-index: 1;
+    padding: 1.5%;
+    display: flex;
+    background-color: black;
+    width: 100%;
+}
+.header-main{
+    display: flex;
+    align-items: center;
+    margin: 0px 0px 0px 40%;
+}
+.header-main h1{
+    font-size: 50px;
+    color: white;
+}
+.header-main img{
+    width: 75px;
+    height: 70px;
+    border-radius: 50%;
+    margin: 0px 1.5% 0px 0px;
+}
+/***********************************************************************************************************************/
+main{
+    position: fixed;
+}
+main h1{
+    font-size: 60px;
+    width: 100%;
+    margin: 15% 0px 0px 4%;
+}
+main button{
+    width: 150px;
+    height: 30px;
+    margin: 2% 0px 0px 10%;
+    font-weight: bold;
+}
+main h2{
+    font-size: 40px;
+    margin: 2% 0px 0px 90px;
+}
+main .content{
+    display: flex;
+    justify-content: space-around;
+    margin: 18px 0px 0px 90px;
+}
+main hr{
+    margin: 10px 0px 0px 90px;
+}
+main section .product{
+    display: flex;
+    justify-content: space-around;
+    margin: 28px 0px 0px 90px;
+}
+/*****************************************************************************************************************/
+footer{
+    position: absolute;
+    top: 88vh;
+    background: black;
+    width: 100%;
+    height: 12vh;
+}
+.footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1.6% 5% 0px 5%;
+}
+.footer label{
+    color: white;
+    font-size: 15px;
+}
+.footer h1{
+    color: white;
+    font-size: 40px;
+}
+.footer .ball{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: white;
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://www.thymeleaf.org">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" th:href="@{/css/admin.css}" >
+        <title>Administrador</title>
+    </head>
+    <body>
+        <header>
+            <div class="header-main">
+                <img th:src="@{/imagenes/logo.png}" alt="">
+                <h1><a  th:href="@{/administrador}" >SYNOC</a></h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a >Home_Administrador</a></li>
+                    <li><a th:href="@{/producto}">Crear producto</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section>
+                <div class="content content-one" th:each="producto: ${productos}" >
+                    <img th:src="@{/imagenes/product-One.jpg}" alt="">
+                    <h5 th:text="${producto.nombre}"></h5>
+                    <h5 th:text="${producto.descripcion} "></h5>
+                    <h2 th:text=" 'precio : ' + ${producto.precio}"></h2>
+                    <button onclick="location.href='../pagina/login.html'">More</button>
+                </div>
+              
+            </section>
+        </main>
+        <footer>
+            <div class="footer">
+                <label for="">Create By Group</label>
+                <div class="ball"></div>
+                <h1>SYNOC</h1>
+                <div class="ball"></div>
+                <label for="">Join our team</label>
+            </div>
+        </footer>
+        <script th:src="@{/js/archivoUno.js}"></script>
+    </body>
+</html>

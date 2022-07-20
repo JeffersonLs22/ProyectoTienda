@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/manager.css">
+    <title>Manager</title>
+</head>
+<body>
+    <header>
+        <div class="header-main">
+            <img src="../imagenes/logo.png" alt="">
+            <h1 ><a th:href="@{/administrador}" >SYNOC</a></h1>
+        </div>
+    </header>
+    <main>
+        <h1>Control and product management</h1>
+         <li><a th:href="@{/crear}">Crear producto</a></li>
+        <h2>Products</h2>
+        <div class="content">
+            <h3>Name</h3>
+            <h3>Description</h3>
+            <h3>Inventory</h3>
+            <h3>Price</h3>
+            <h3>Action</h3>
+            <h3>Action</h3>
+        </div>
+        <hr>
+        <section>
+            <div class="product" th:each="producto:${productos}" >
+                <h4 th:text="${producto.nombre}"></h4>
+                <h4 th:text="${producto.descripcion}"></h4>
+                <h4 th:text="${producto.cantidad}"></h4>
+                <h4  th:text="${producto.precio}"  ></h4>
+                <h4><a href="">Edit</a></h4>
+                <h4><a href="">Remove</a></h4>
+            </div>
+            <hr>
+            <div class="product">
+                <h4>Lorem ipsu</h4>
+                <h4>Lorem ipsu</h4>
+                <h4>6</h4>
+                <h4>$65.8</h4>
+                <h4><a href="">Edit</a></h4>
+                <h4><a href="">Remove</a></h4>
+            </div>
+            <hr>
+         
+        </section>
+    </main>
+    <footer>
+        <div class="footer">
+            <label for="">Create By Group</label>
+            <div class="ball"></div>
+            <h1>SYNOC</h1>
+            <div class="ball"></div>
+            <label for="">Join our team</label>
+        </div>
+    </footer>
+</body>
+</html>

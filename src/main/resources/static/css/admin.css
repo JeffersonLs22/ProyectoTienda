@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&family=Tiro+Gurmukhi&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+header{
+    position: fixed;
+    z-index: 1;
+    padding: 1.5%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: black;
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+}
+.header-main{
+    display: flex;
+    align-items: center;
+}
+.header-main h1{
+    font-size: 50px;
+    color: white;
+}
+.header-main img{
+    width: 75px;
+    height: 70px;
+    border-radius: 50%;
+    margin: 0px 1.5% 0px 0px;
+}
+header nav ul{
+    display: flex;
+    list-style: none;
+}
+header nav ul li{
+    margin: 0px 0px 0px 88px;
+    font-size: 20px;
+}
+header nav ul li a{
+    color: white;
+}
+
+/*----------------------------------------------------------------------------------------------------------------*/
+main{
+    background-image: url(../imagenes/fondo.png);
+    position: fixed;
+    width:100%;
+    height:100vh;
+}
+main section{
+    display: flex;
+    justify-content: space-around;
+}
+main .content{
+    width: 280px;
+    height: 340px;
+    background: rgb(241, 241, 241);
+    margin: 18% 0px 0px 0px;
+    padding: 0.4%;
+}
+main .content img{
+    width: 280px;
+    height: 160px;
+}
+main .content h2{
+    font-size: 30px;
+    margin: 4% 0px 0px 0px;
+}
+main .content h5{
+    color: rgb(0, 0, 0);
+    margin: 6% 0px 0px 0px;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+}
+main .content button{
+    border-radius: 20px;
+    width: 140px;
+    height: 30px;
+    margin: 8% 0px 0px 25%;
+    transition: all 300ms ease;
+    font-family: 'Roboto', sans-serif;
+}
+main .content button:hover{
+    background: black;
+    color: white;
+}
+/********************************************************************************************************************/
+footer{
+    position: absolute;
+    top: 100vh;
+    background: black;
+    width: 100%;
+    height: 12vh;
+    font-family: 'Roboto', sans-serif;
+}
+.footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1.6% 5% 0px 5%;
+}
+.footer label{
+    color: white;
+    font-size: 15px;
+}
+.footer h1{
+    color: white;
+    font-size: 40px;
+}
+.footer .ball{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: white;
+}

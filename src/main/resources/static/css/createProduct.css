@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&family=Tiro+Gurmukhi&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+}
+header{
+    position: fixed;
+    z-index: 1;
+    padding: 1.5%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: black;
+    width: 100%;
+}
+.header-main{
+    display: flex;
+    align-items: center;
+}
+.header-main h1{
+    font-size: 50px;
+    color: white;
+}
+.header-main img{
+    width: 75px;
+    height: 70px;
+    border-radius: 50%;
+    margin: 0px 1.5% 0px 0px;
+}
+/*****************************************************************************************************************/
+main {
+    position: fixed;
+}
+main h1{
+    font-size: 40px;
+    width: 100%;
+    margin: 20% 0px 0px 4%;
+}
+main label{
+    margin: 0px 0px 0px 8%;
+    font-size: 20px;
+}
+main h2{
+    font-size: 30px;
+    margin: 0% 0px 0px 6%;
+}
+main h3{
+    margin: 2% 0px 0px 8%;
+
+}
+main input{
+    margin: 2% 0px 0px 8%;
+    width: 300px;
+    height: 25px;
+    border-radius: 5px;
+}
+main .file{
+    display: flex;
+    width: 38%;
+    justify-content: space-between;
+    margin: 2% 0px 0px 8%;
+}
+main .file>button{
+    width: 100px;
+    height: 25px;
+    font-size: 16px;
+}
+main>button{
+    margin: 2% 0px 0px 8%;
+    width: 100px;
+    height: 30px;
+    background-color: white;
+    font-weight: bold;
+    transition: all 300ms ease;
+}
+main>button:hover{
+    background: black;
+    color: white;
+}
+
+
+/****************************************************************************************************************/
+footer{
+    position: absolute;
+    top: 85vh;
+    background: black;
+    width: 100%;
+    height: 15vh;
+}
+.footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1.6% 5% 0px 5%;
+}
+.footer label{
+    color: white;
+    font-size: 30px;
+}
+.footer h1{
+    color: white;
+    font-size: 60px;
+}
+.footer .ball{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: white;
+}
